@@ -22,8 +22,17 @@ namespace BasicArrayOps
                 "Sunday"
             };
 
-            string tuesday = daysOfWeek[1];
-            Console.WriteLine(tuesday);
+            daysOfWeek[5] = "PartyDay";
+
+            foreach (string day in daysOfWeek)
+            {
+                Console.WriteLine(day);
+            }
+
+            Console.WriteLine("Input index to lookup day");
+            int daySearch = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(daysOfWeek[daySearch]);
         }
     }
 }
